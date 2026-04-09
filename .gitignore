@@ -1,0 +1,20 @@
+# Secrets — never commit
+data/.env
+data/.api_token
+data/.secrets/
+
+# Runtime data
+data/regis.db
+data/chroma/
+data/audit.log
+data/*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# macOS
+.DS_Store

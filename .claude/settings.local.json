@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install:*)",
+      "Bash(pip3 install:*)",
+      "Read(//usr/local/**)",
+      "Bash(brew list:*)",
+      "Bash(brew install:*)",
+      "Bash(/opt/homebrew/bin/python3.12 -m venv venv)",
+      "Bash(./venv/bin/python --version)",
+      "Bash(./venv/bin/pip install:*)",
+      "Bash(ollama pull:*)",
+      "Bash(ollama list:*)",
+      "Bash(./venv/bin/python -c \"import httpx; print\\(''httpx ok''\\)\")",
+      "Bash(./venv/bin/python -c \":*)",
+      "Bash(pkill -f \"uvicorn app.main\")",
+      "Bash(curl -v http://localhost:8765/health)",
+      "Bash(curl -s http://localhost:8765/snapshot)",
+      "Bash(python3 -m json.tool echo \"\" echo \"=== /scan_docs ===\" curl -s -X POST http://localhost:8765/scan_docs)",
+      "Bash(python3 -m json.tool)",
+      "Bash(python3 -m json.tool echo \"\" echo \"=== /search ===\" curl -s \"http://localhost:8765/search?q=phase+1+unlock+criteria&k=3\")",
+      "Bash(curl -s http://localhost:8765/scan_history)"
+    ]
+  }
+}
